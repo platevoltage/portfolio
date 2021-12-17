@@ -1,8 +1,41 @@
 * {
     background-color: black;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 header {
+    /* background-color: #444444; */
+    height: 100px
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#right {
+    flex: 1 0 40%;
+    /* background-color: red; */
+    padding: 20px 20px 20px 10px;
+    /* width: 50%; */
+    
+
+
+}
+#left {
+    flex: 1 0 40%;
+    /* background-color: blue; */
+    padding: 20px 10px 20px 20px;
+    /* width: 50%; */
+}
+
+.panel {
     background-color: #444444;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 20px;
+    /* padding: 200px; 
+
 }
