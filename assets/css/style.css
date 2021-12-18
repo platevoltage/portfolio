@@ -1,5 +1,5 @@
 * {
-    /* background-color: black; */
+
     color: #b4b4b4;
     padding: 0;
     margin: 0;
@@ -8,11 +8,12 @@
 
 body {
     background-color: black;
+    justify-content: center;
 }
 
 h1 {
     font-size: 30px;
-    /* font-style: normal; */
+
 }
 
 
@@ -26,7 +27,7 @@ header {
 }
 
 nav {
-    /* float: right; */
+
     justify-content: flex-end;
 }
 
@@ -38,12 +39,13 @@ nav ul li {
 
 main {
 
-    background-color: #000000;
+    /* background-color: #969696; */
     display: flex;
     flex-wrap: wrap;
+    /* width: 1000px; */
     justify-content: center;
     
-    /* padding: 0px; */
+    padding: 20px;
     padding-top: 60px;
 }
 header section {
@@ -52,46 +54,36 @@ header section {
     padding: 10px 20px 20px 20px;
     overflow: auto;
 }
-section {
-    /* display: flex;
-    flex: 1 0 auto; */
-    /* background-color: #161616; */
-    /* padding: 20px 20px 20px 20px; */
-    /* width: 50%; */
 
-}
 
 section.justifiedRight {
     justify-content: flex-end;
 }
 
-main section {
-    /* justify-content: center; */
-    /* overflow: auto; */
-    
-   
-}
+
 
 main section#left {
     display: flex;
     flex-flow: column;
     width: 50%;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     justify-content: flex-start;
+    margin-right: 20px;
     
 }
 main section#right {
     display: flex;
-    width: 40%;
-    /* max-width: 400px; */
-    /* height: 1000px; */
+    flex-flow: column;
+    width: 45%;
+    /* max-width: 660px; */
+
 
 }
 
 main section div {
-    /* flex: 0 1 100%; */
+
     border-radius: 20px;
-    /* justify-content: center; */
+
     margin-bottom: 20px;
 }
 
@@ -103,31 +95,17 @@ img {
 
 
 main section div#photo {
-    flex: 0 1 auto;
-    /* width: 99%; */
-  
-  
-    /* background-color: #111111; */
-    /* background-image: url("../images/photo.jpg"); */
-  
-    /* height: 200px;  */
-    /* max-width: 750px; */
-    
-    
+    flex: 0 1 auto;   
 }
 
 main section div#info {
     flex: 0 1 auto;
-    /* width: 99%; */
-  
+
   
     background-color: #111111;
-    /* background-image: url("../images/photo.jpg"); */
-  
-     /* height: 200px;   */
-     padding: 30px;
-    /* max-width: 750px; */
-    
+
+    padding: 30px;
+
     
 }
 
@@ -135,25 +113,27 @@ main section div#info {
 
 
 main section div.panel {
-    display: column;
-    /* flex: 0 1 100%; */
-    /* flex-wrap: wrap; */
-    /* flex-flow: column wrap; */
-    width: 99%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 99%; */
     background-color: #151583;
-    /* height: 1000px; */
     justify-content: center;
    align-content: flex-start;
-    min-height: 1000px;
+    /* min-height: 1000px; */
+    padding: 10px;
 
   
 }
 
 .project {
-    /* flex: 1 0 50%;  */
+
     background-color: #6e6e6e33;
     height: 400px;
-    /* max-width: 100px; */
-    margin: 20px;
+    /* width: 240px; */
+    width: 45%;
+    margin: 10px;
+    min-width: 200px;
+    /* padding: 10px; */
 }
 
