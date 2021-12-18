@@ -4,15 +4,23 @@
     padding: 0;
     margin: 0;
     font-family: 'Verdana','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS',  'sans-serif';
+    
+    
 }
 
+
+
 body {
+    display: flex;
     background-color: black;
-    justify-content: center;
+    /* justify-content: center; */
+    /* max-width:1800px; */
+    /* justify-content: flex-end; */
 }
 
 h1 {
     font-size: 30px;
+    /* text-align: center; */
 
 }
 
@@ -23,17 +31,18 @@ header {
     height: 50px;
     width: 100%;
     position: fixed;
+    justify-content: center;
+   
+
     
 }
 
-nav {
 
-    justify-content: flex-end;
-}
 
 nav ul li {
     display: inline;
     padding: 10px;
+    font-size: 20px;
 
 }
 
@@ -42,7 +51,7 @@ main {
     /* background-color: #969696; */
     display: flex;
     flex-wrap: wrap;
-    /* width: 1000px; */
+    /* max-width: 1800px; */
     justify-content: center;
     
     padding: 20px;
@@ -50,37 +59,106 @@ main {
 }
 header section {
     display: flex;
+    flex-wrap: wrap;
     flex: 1 0 auto;
+    /* width: 100%; */
     padding: 10px 20px 20px 20px;
     overflow: auto;
+    
 }
 
 
 section.justifiedRight {
     justify-content: flex-end;
 }
-
+main section.margin {
+    
+    /* width: 1%; */
+    /* background-color: red; */
+    flex-grow: 1;
+}
 
 
 main section#left {
     display: flex;
     flex-flow: column;
-    width: 50%;
-    /* padding-right: 20px; */
+    width: 55%;
+    /* padding-bottom: 20px; */
     justify-content: flex-start;
-    margin-right: 20px;
+    margin-right: 1%;
+    /* flex-grow: 1; */
     
 }
 main section#right {
     display: flex;
-    flex-flow: column;
-    width: 45%;
-    /* max-width: 660px; */
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 38%;
+    max-width: 600px;
+    background-image: linear-gradient(#131385 0%,#1b0b44 100%);
+
+    /* justify-content: center; */
+   /* align-content: flex-start; */
+    /* min-height: 1000px; */
+    margin-left: 1%;
+    padding: 10px;
+
+
+
+}
+@media only screen and (min-width: 850px) {
+
+main section#right {
+    max-width: 600px;
+}
+}
+
+
+@media only screen and (max-width: 850px) {
+    main section#left {
+        width: 100%;
+    }
+    main section#right {
+        width: 100%;
+    }
+ 
+
+   
+    
+}
+
+@media only screen and (max-width: 635px) {
+
+    header {
+        display: block;
+        height: 50px;
+        /* background-color: red; */
+    }
+    h1 {
+        font-size:20px;
+        
+    }
+    nav ul li {
+        font-size:15px;
+    }
+    header section {
+        padding: 0;
+        justify-content: center;
+    }
+    section.justifiedRight {
+        justify-content: center;
+    }
+ 
+   
 
 
 }
 
-main section div {
+div {
+    border-radius: 20px;
+}
+
+main section {
 
     border-radius: 20px;
 
@@ -101,10 +179,11 @@ main section div#photo {
 main section div#info {
     flex: 0 1 auto;
 
-  
-    background-color: #111111;
+    background-image: linear-gradient(#111111 0%,#2b2b2b 100%);
+    /* background-color: #111111; */
 
     padding: 30px;
+    margin-top: 20px;
 
     
 }
@@ -112,28 +191,66 @@ main section div#info {
 
 
 
-main section div.panel {
+/* main section div.panel {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 99%; */
+    width: 99%;
     background-color: #151583;
     justify-content: center;
    align-content: flex-start;
-    /* min-height: 1000px; */
+    min-height: 1000px;
     padding: 10px;
 
   
-}
+} */
 
 .project {
-
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #6e6e6e33;
     height: 400px;
     /* width: 240px; */
-    width: 45%;
-    margin: 10px;
+    width: 46%;
+    /* max-width: 200px; */
+    margin: 2%;
     min-width: 200px;
     /* padding: 10px; */
+    flex-grow: 1;
+    transition: all 0.5s ease-in-out; 
+
+   
+}
+
+/* .project:hover {
+    position: relative;
+
+    background-color: #6e6e6eff;
+  
+    transition: all 0.5s ease-in-out; 
+
+} */
+
+.project p {
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.project img {
+    display: flex;
+    /* padding: 60px; */
+    /* display: block; */
+    /* width: 80%; */
+    /* height: auto; */
+    /* height 100%; */
+    /* background-color: #000000; */
+    object-fit: contain;
+width: 90%;
+padding: 5%;
+height: 300px;
+justify-content: center;
 }
 
