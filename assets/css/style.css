@@ -19,8 +19,9 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 36px;
     /* text-align: center; */
+    font-weight: normal;
 
 }
 
@@ -28,7 +29,7 @@ h1 {
 header {
     background-color: #000000dd;
     display: flex;
-    height: 50px;
+    height: 55px;
     width: 100%;
     position: fixed;
     justify-content: center;
@@ -46,6 +47,19 @@ nav ul li {
     padding: 10px;
     font-size: 20px;
 
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 10px;
+    
+}
+
+nav a:active {
+    color: #f8ff9d;
 }
 
 main {
@@ -87,7 +101,8 @@ main section#left {
     width: 55%;
     /* padding-bottom: 20px; */
     justify-content: flex-start;
-    margin-right: 1%;
+    margin-right: 5px;
+    margin-top: 20px;
     /* flex-grow: 1; */
     
 }
@@ -97,7 +112,7 @@ main section#right {
     flex-wrap: wrap;
     width: 38%;
     max-width: 600px;
-    background-image: linear-gradient(#131385 0%,#1b0b44 100%);
+    background-image: linear-gradient(#131385 100%,#1b0b44 0%);
 
     /* justify-content: center; */
    /* align-content: flex-start; */
@@ -108,57 +123,12 @@ main section#right {
 
 
 }
-@media only screen and (min-width: 850px) {
-
-main section#right {
-    max-width: 600px;
-}
-}
 
 
-@media only screen and (max-width: 850px) {
-    main section#left {
-        width: 100%;
-    }
-    main section#right {
-        width: 100%;
-    }
- 
-
-   
-    
-}
-
-@media only screen and (max-width: 635px) {
-
-    header {
-        display: block;
-        height: 50px;
-        /* background-color: red; */
-    }
- 
 
 
-    nav ul li {
-        font-size:15px;
-        
-    }
-    header section {
-        padding: 0;
-        justify-content: center;
-    }
-    section.justifiedRight {
-        justify-content: center;
-    }
- 
-   
 
 
-}
-
-div {
-    border-radius: 20px;
-}
 
 main section {
 
@@ -179,9 +149,10 @@ main section div#photo {
 }
 
 main section div#info {
+    border-radius: 20px;
     flex: 0 1 auto;
 
-    background-image: linear-gradient(#111111 0%,#2b2b2b 100%);
+    background-image: linear-gradient(#2b2b2b 0%, #111111 100%);
     /* background-color: #111111; */
 
     padding: 30px;
@@ -192,27 +163,13 @@ main section div#info {
 
 
 
-
-/* main section div.panel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 99%;
-    background-color: #151583;
-    justify-content: center;
-   align-content: flex-start;
-    min-height: 1000px;
-    padding: 10px;
-
-  
-} */
-
 .project {
-    
+    border-radius: 20px;
+    background-color: #6e6e6e33;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #6e6e6e33;
+   
     height: 400px;
     /* width: 240px; */
     width: 46%;
@@ -221,27 +178,40 @@ main section div#info {
     min-width: 200px;
     /* padding: 10px; */
     flex-grow: 1;
-    transition: all 0.5s ease-in-out; 
+     transition: all 0.5s ease-in-out; 
 
    
 }
 
-/* .project:hover {
+ .project:hover {
     position: relative;
 
-    background-color: #6e6e6eff;
+    background-color: #00000077;
   
-    transition: all 0.5s ease-in-out; 
+    
+    margin: 0%;
+    width: 50%;
+    height: 420px;
 
-} */
+   transition: all 0.5s ease-in-out; 
+   /* transition: none; */
 
-.project p {
+} 
+
+.project:active {
+    background-color: #f5ff9f77;
+  
+
+    transition: none;
+}
+
+.project  p {
     text-align: center;
     height: 100%;
     padding: 10px;
 }
 
-.project img {
+.project  img {
     display: flex;
     /* padding: 60px; */
     /* display: block; */
@@ -250,9 +220,54 @@ main section div#info {
     /* height 100%; */
     /* background-color: #000000; */
     object-fit: contain;
-width: 90%;
-padding: 5%;
-height: 300px;
-justify-content: center;
+    width: 90%;
+    padding: 5%;
+    height: 300px;
+    justify-content: center;
 }
 
+@media only screen and (max-width: 850px) {
+    main section#left {
+        width: 100%;
+        margin-top: 0px;
+    }
+    main section#right {
+        max-width: 850px;
+        width: 100%;
+    }
+    main section div#info {
+        padding: 20px;
+    }
+
+  
+ 
+
+   
+    
+}
+
+@media only screen and (max-width: 635px) {
+
+    header {
+        display: block;
+        height: 70px;
+        /* background-color: red; */
+    }
+ 
+
+
+    nav ul li {
+        font-size:15px;
+        
+    }
+    header section {
+        padding: 0;
+        justify-content: center;
+    }
+    section.justifiedRight {
+        justify-content: center;
+    }
+  
+
+
+}
