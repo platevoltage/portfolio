@@ -42,6 +42,26 @@ nav {
     margin-top: 5px;
 }
 
+li {
+    list-style-type: none;
+    display: inline;
+    /* padding-right: 16%; */
+
+}
+
+
+
+li a img {
+    width: 50px;
+    opacity: 0.3;
+
+}
+
+
+li a img:hover {
+    opacity: .6;
+}
+
 nav ul li {
     display: inline;
     padding: 10px;
@@ -131,13 +151,14 @@ main section#right {
 
 
 main section {
+    display: flex;
 
     border-radius: 20px;
 
     margin-bottom: 20px;
 }
 
-img {
+#photo img {
     width:100%;
     max-height:100%;
     border-radius: 20px;
@@ -146,9 +167,10 @@ img {
 
 main section div#photo {
     flex: 0 1 auto;   
+    /* padding-left: 3%; */
 }
 
-main section div#info {
+main section div.text-area {
     border-radius: 20px;
     flex: 0 1 auto;
 
@@ -157,13 +179,25 @@ main section div#info {
 
     padding: 30px;
     margin-top: 20px;
+    justify-content: center;
 
     
 }
 
+main section div#contact {
+    background-image: none;
+    background-color: #111111;
+}
 
+a#contact-anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
 
 .project {
+    position: relative;
     border-radius: 20px;
     background-color: #6e6e6e33;
     display: flex;
@@ -175,25 +209,31 @@ main section div#info {
     width: 46%;
     /* max-width: 200px; */
     margin: 2%;
+ top: 0%;
     min-width: 200px;
     /* padding: 10px; */
     flex-grow: 1;
-     transition: all 0.5s ease-in-out; 
+     transition: all 0.2s ; 
 
    
 }
 
  .project:hover {
-    position: relative;
+    
 
-    background-color: #00000077;
+    background-color: #222222ff;
   
     
-    margin: 0%;
-    width: 50%;
-    height: 420px;
+    margin: -6%;
+    /* padding: -2%; */
+    /* top: 1%; */
+  
+    width: 62%;
+    height: 480px;
 
    transition: all 0.5s ease-in-out; 
+   z-index: 1;
+   box-shadow: 2px 2px 10px black;
    /* transition: none; */
 
 } 
@@ -205,10 +245,33 @@ main section div#info {
     transition: none;
 }
 
-.project  p {
+h2 {
+    
+    padding-top: 20px;
+    display: inline;
+/* background-color: red; */
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+
+.project p {
+  
     text-align: center;
     height: 100%;
-    padding: 10px;
+    padding: 6%;
+    /* width: 20px; */
+    /* background-color: #1b0b44; */
+    width: 88%;
+    font-size: 80%;
+
+  
+    
+    
+    
+
 }
 
 .project  img {
@@ -224,6 +287,7 @@ main section div#info {
     padding: 5%;
     height: 300px;
     justify-content: center;
+    /* background-color: red; */
 }
 
 @media only screen and (max-width: 850px) {
@@ -238,6 +302,17 @@ main section div#info {
     main section div#info {
         padding: 20px;
     }
+    .project:hover {
+           
+        margin: 0%;
+    
+      
+        width: 50%;
+        height: 420px;
+  
+    
+    
+    } 
 
   
  
