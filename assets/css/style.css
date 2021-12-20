@@ -21,7 +21,9 @@ h1 {
 }
 
 header {
-    background-color: #000000dd;
+    background-color: #000000bb;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     display: flex;
     height: 55px;
     width: 100%;
@@ -45,8 +47,12 @@ li a img {
     width: 50px;
     height: 50px;
     opacity: 0.3;
-    padding: 4px;
+    margin: 4px;
     transition: all 0.2s ; 
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 0px 2px 2px 0px;
+    border-color: #64636e91
 }
 
 
@@ -58,7 +64,7 @@ li a img:hover {
 nav ul li {
     display: inline;
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 a {
@@ -66,7 +72,9 @@ a {
 }
 
 nav a:hover {
-    text-shadow: 0px 0px 10px;    
+
+    color: #fff;
+    /* text-shadow: 0px 0px 10px;     */
 }
 
 nav a:active {
@@ -115,6 +123,10 @@ main section#right {
     background-image: linear-gradient(#131385 100%,#1b0b44 0%);
     margin-left: 1%;
     padding: 10px;
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    border-color: #363685be
+    /* height: 100%; */
 }
 
 main section {
@@ -128,6 +140,10 @@ main section div#photo {
     background-image: url("../images/photo.jpg");
     background-size: 100%;
 }
+main section div p {
+    /* background-color: #565c02; */
+    width: 97%;
+}
 
 main section div {
     border-radius: 20px;
@@ -139,12 +155,17 @@ main section div {
     margin-top: 2%;
     justify-content: center;
     transition: all 0.2s;     
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    border-color: #66666671
 }
 
 main section div:hover {
-    margin: -1%;
+    margin-left: -1%;
     margin-top: 1%;
-    padding: 4.9%;
+    margin-bottom: -1%;
+    margin-right: -1%;
+    padding: 5%;
     z-index: 1;
     transition: all 0.2s; 
     box-shadow: 2px 2px 10px black;
@@ -153,7 +174,7 @@ main section div:hover {
 main section div#contact:hover img {
     height: 60px;
     width: 60px;
-    padding: 0px;
+    margin: 0px;
     transition: all 0.2s ; 
 }
 
@@ -178,24 +199,30 @@ a#contact-anchor {
     justify-content: center;
     height: 400px;
     width: 42%;
-    margin: 2% 2% 2% 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     min-width: 200px;
     padding-right: 0%;
     padding-top: 5%;
     flex-grow: 1;
     font-size: 100%;
     transition: all 0.1s ; 
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    border-color: #70707038
 }
 
  .project:hover {  
-    background-color: #222222bb;
+    background-color: #6e6e6e77;
     min-width: 240px;
     margin-left: -2%;
     margin-right: -4%;
     margin-top: -2%;
-    margin-bottom:-8%;
+    margin-bottom:-4%;
     width: 52%;
-    height: 460px;
+    height: 440px;
     z-index: 1;
     box-shadow: 2px 2px 10px black;
 } 
@@ -203,6 +230,7 @@ a#contact-anchor {
 .project:hover h2 {
     transition: all 0.2s;
     font-size: 26px;
+    
 }
 
 .project:active {
@@ -215,25 +243,35 @@ h2 {
     display: inline;
     text-align: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
 
 .project p {
+    position: relative;
+    left: 10%;
     text-align: center;
     height: 100%;
-    padding: 6%;
-    transition: all 0.2s;
+    /* padding: 1% 0% 0% 10%; */
+    /* margin: 8%; */
+    transition: all 0.1s;
+    width: 80%;
+    /* background-color: red; */
 }
 
 .project div {
     background-image: none;
+    border-style: none;
+    /* background-color: #131385; */
 }
 
 .project:hover p {
-    padding: 8% 14% 0% 14%;
+    /* padding: 1% 0% 0% 16%; */
     transition: all 0.1s;
+    width: 66%;
+    left: 16%;
+    
 }
 
 .project:hover div {
@@ -267,7 +305,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
     main {
         padding-top: 20px;
     }
@@ -283,14 +321,16 @@ h2 {
         height: 400px;
         margin: 2% 2% 2% 2%;
         width: 42%;
+        min-width: 220px;
     } 
     .project:hover p {
-        padding: 6%;
-        transition: all 0.1s;
+        left: 10%;
+         width: 80%;
+        
     }
     .project:hover h2 {
         transition: all 0.2s;
-        font-size: 20px;
+        font-size: 24px;
     }
    
 }
