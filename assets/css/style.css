@@ -13,18 +13,12 @@
 body {
     display: flex;
     background-color: black;
-    /* justify-content: center; */
-    /* max-width:1800px; */
-    /* justify-content: flex-end; */
 }
 
 h1 {
     font-size: 36px;
-    /* text-align: center; */
     font-weight: normal;
-
 }
-
 
 header {
     background-color: #000000dd;
@@ -34,9 +28,6 @@ header {
     position: fixed;
     justify-content: center;
     z-index: 2;
-   
-
-    
 }
 
 nav {
@@ -46,8 +37,6 @@ nav {
 li {
     list-style-type: none;
     display: inline;
-    /* padding-right: 16%; */
-
 }
 
 
@@ -58,7 +47,6 @@ li a img {
     opacity: 0.3;
     padding: 4px;
     transition: all 0.2s ; 
-
 }
 
 
@@ -71,7 +59,6 @@ nav ul li {
     display: inline;
     padding: 10px;
     font-size: 30px;
-
 }
 
 a {
@@ -79,8 +66,7 @@ a {
 }
 
 nav a:hover {
-    text-shadow: 0px 0px 10px;
-    
+    text-shadow: 0px 0px 10px;    
 }
 
 nav a:active {
@@ -88,34 +74,25 @@ nav a:active {
 }
 
 main {
-
-    /* background-color: #969696; */
     display: flex;
     flex-wrap: wrap;
-    /* max-width: 1800px; */
-    justify-content: center;
-    
+    justify-content: center;    
     padding: 20px;
     padding-top: 60px;
 }
+
 header section {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 auto;
-    /* width: 100%; */
     padding: 10px 20px 20px 20px;
-    overflow: auto;
-    
+    overflow: auto;  
 }
-
 
 section.justifiedRight {
     justify-content: flex-end;
 }
 main section.margin {
-    
-    /* width: 1%; */
-    /* background-color: red; */
     flex-grow: 1;
 }
 
@@ -124,14 +101,11 @@ main section#left {
     display: flex;
     flex-flow: column;
     width: 55%;
-    /* padding-bottom: 20px; */
     justify-content: flex-start;
     margin-right: 5px;
-    margin-top: 20px;
-    /* flex-grow: 1; */
-    /* min-width: 580px; */
-    
+    margin-top: 20px;    
 }
+
 main section#right {
     display: flex;
     flex-flow: row;
@@ -139,38 +113,15 @@ main section#right {
     width: 38%;
     max-width: 600px;
     background-image: linear-gradient(#131385 100%,#1b0b44 0%);
-
-    /* justify-content: center; */
-   /* align-content: flex-start; */
-    /* min-height: 1000px; */
     margin-left: 1%;
     padding: 10px;
-
-
-
 }
-
-
-
-
-
-
 
 main section {
     display: flex;
-
     border-radius: 20px;
-
     margin-bottom: 20px;
 }
-
-/* #photo img {
-    width:100%;
-    height:100%;
-    border-radius: 20px;
-   
-} */
-
 
 main section div#photo {
     aspect-ratio: 4/2.5;
@@ -178,38 +129,19 @@ main section div#photo {
     background-size: 100%;
 }
 
-
-
-
-
-/* main section div#photo:hover {
-    padding: 1%;
-    
-    transition: all 0.2s; 
-} */
-
-
-
 main section div {
     border-radius: 20px;
     flex: 0 1 auto;
     font-size: 100%;
-
     background-image: linear-gradient(#2b2b2b 0%, #111111 100%);
-    /* background-color: #111111; */
-
     padding: 4%;
     margin: 0%;
     margin-top: 2%;
     justify-content: center;
-    transition: all 0.2s; 
-    
-
-    
+    transition: all 0.2s;     
 }
 
 main section div:hover {
-    
     margin: -1%;
     margin-top: 1%;
     padding: 4.9%;
@@ -218,17 +150,12 @@ main section div:hover {
     box-shadow: 2px 2px 10px black;
 }
 
-
-
-
 main section div#contact:hover img {
-
     height: 60px;
     width: 60px;
     padding: 0px;
     transition: all 0.2s ; 
 }
-
 
 main section div#contact {
     background-image: none;
@@ -249,86 +176,43 @@ a#contact-anchor {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
     height: 400px;
-    /* width: 240px; */
     width: 42%;
-    /* aspect-ratio: 1/2; */
-    /* max-width: 200px; */
     margin: 2% 2% 2% 2%;
-    /* top: 0%; */
     min-width: 200px;
-    /* padding: 2%; */
     padding-right: 0%;
     padding-top: 5%;
     flex-grow: 1;
     font-size: 100%;
     transition: all 0.1s ; 
-    
-
-   
 }
 
- .project:hover {
-     
-  
+ .project:hover {  
     background-color: #222222bb;
-  /* right: 20px;
-  top: -20px;
-  width: 54%; */
-  min-width: 240px;
-  
-    
-    /* margin: 0% -4% -6% -4%; */
-    /* padding: 8%; */
+    min-width: 240px;
     margin-left: -2%;
     margin-right: -4%;
     margin-top: -2%;
     margin-bottom:-8%;
-
-
-    /* padding-right: 4%; */
     width: 52%;
     height: 460px;
-  
-    
-   
-    
-   z-index: 1;
-   box-shadow: 2px 2px 10px black;
-   
-
+    z-index: 1;
+    box-shadow: 2px 2px 10px black;
 } 
-
-/* .project:hover img {
-    margin: -20%;
-    margin-bottom: -80px;
-    width: 130%;
-    transition: all 0.2s;
-} */
 
 .project:hover h2 {
     transition: all 0.2s;
     font-size: 26px;
 }
 
-
-
-
-
 .project:active {
     background-color: #f5ff9f77;
-  
-
     transition: none;
 }
 
 h2 {
     transition: all 0.2s;
-    
-    /* padding-top: 20px; */
     display: inline;
-/* background-color: red; */
     text-align: center;
     width: 100%;
     font-size: 20px;
@@ -337,21 +221,10 @@ h2 {
 
 
 .project p {
-  
     text-align: center;
     height: 100%;
     padding: 6%;
-    /* width: 20px; */
-    /* background-color: #1b0b44; */
-    /* width: 90%; */
-    /* font-size: 80%; */
     transition: all 0.2s;
-
-  
-    
-    
-    
-
 }
 
 .project div {
@@ -360,39 +233,25 @@ h2 {
 
 .project:hover p {
     padding: 8% 14% 0% 14%;
-    /* width: 76%; */
     transition: all 0.1s;
-
 }
+
 .project:hover div {
-    /* margin: -10%; */
     box-shadow: none;
 }
+
 .project img {
-    /* display: flex; */
-    /* padding: 60px; */
-    /* display: block; */
     width: 100%;
-    
-    /* height: auto; */
     height: 100%;
-    /* background-color: #000000; */
     object-fit: contain;
-    /* width: 100%; */
-    /* padding: 5%; */
-    /* height: 300px; */
-    /* justify-content: center; */
-    /* margin: -5%; */
     margin-bottom: 0px;
-    /* background-color: red; */
     transition: all 0.2s;
-  
 }
+
 @media only screen and (max-height: 450px) {
 
     header {
-        height: 40px;
-        
+        height: 40px;  
     }
     h1 {
         font-size: 20px;
@@ -408,46 +267,29 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     main section#left {
         width: 100%;
-        /* margin-top: 0px; */
     }
     main section#right {
         max-width: 850px;
         width: 100%;
     }
-    /* main section div#info {
-        padding: 20px;
-    } */
   
     .project:hover {
-           
-     
         height: 400px;
         margin: 2% 2% 2% 2%;
-    
-  
-    
-    
+        width: 42%;
     } 
     .project:hover p {
         padding: 6%;
-        /* width: 76%; */
         transition: all 0.1s;
-    
     }
     .project:hover h2 {
         transition: all 0.2s;
         font-size: 20px;
     }
    
-
-  
- 
-
-   
-    
 }
 
 @media only screen and (max-width: 635px) {
@@ -455,14 +297,10 @@ h2 {
     header {
         display: block;
         height: 70px;
-        /* background-color: red; */
     }
  
-
-
     nav ul li {
-        font-size:15px;
-        
+        font-size:15px; 
     }
     header section {
         padding: 0;
@@ -472,6 +310,4 @@ h2 {
         justify-content: center;
     }
   
-
-
 }
