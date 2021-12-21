@@ -6,6 +6,7 @@
     --panel-color: linear-gradient(#131385 0%,#13138585 100%);
     --blur-amount: blur(4px);
     --text-color: #ffffff99;
+    --radius: 20px;
 
 }
 
@@ -63,7 +64,7 @@ li {
     margin: 4px;
     transition: all var(--animation-time) ; 
     border-style: solid;
-    border-radius: 16px;
+    border-radius: var(--radius);
     border-width: 0px 2px 2px 0px;
     border-color: #64636e91
 }
@@ -128,7 +129,7 @@ main section#left {
     flex-flow: column;
     max-width: 55%;
     justify-content: flex-start;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-top: 20px;    
 }
 
@@ -139,8 +140,7 @@ main section#right {
     flex-flow: column;
     width: 38%;
     justify-content: flex-start;
-    margin-right: 5px;
-    margin-top: 20px;   
+ 
     /* background-color: #a5a5a5be; */
 }
 
@@ -163,7 +163,7 @@ main section#project-panel {
 
 main section {
     display: flex;
-    border-radius: 20px;
+    border-radius: var(--radius);
     margin-bottom: 20px;
     
 }
@@ -174,14 +174,11 @@ main section div#photo {
     background-size: 100%;
     background-attachment: initial;
 }
-main section div p {
-    /* background-color: #565c02; */
-    width: 97%;
-}
+
 
 main section div {
     display: flex;
-    border-radius: 20px;
+    border-radius: var(--radius);
     flex: 0 1 auto;
     font-size: 120%;
     font-weight: 200;
@@ -280,7 +277,7 @@ a#contact-anchor {
 
 .project {
     position: relative;
-    border-radius: 20px;
+    border-radius: var(--radius);
     background-color: #6e6e6e33;
     display: flex;
     flex-direction: column;
@@ -343,6 +340,8 @@ h2 {
     color: var(--text-color);
     
 }
+
+
 
 .project:hover h2{
     color: #ffffffff;
