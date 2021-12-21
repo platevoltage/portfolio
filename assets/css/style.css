@@ -160,7 +160,8 @@ main section {
 
 main section div#photo {
     aspect-ratio: 4/2.5;
-    background-image: url("../images/photo.jpg");
+    background-image: url("../images/photo2.jpg");
+    filter: grayscale();
     background-size: 100%;
     background-attachment: initial;
 }
