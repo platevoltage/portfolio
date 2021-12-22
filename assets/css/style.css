@@ -125,7 +125,8 @@ main section#left { /* left column of content */
     max-width: 55%;
     justify-content: flex-start;
     margin-right: 10px;
-    margin-top: 20px;    
+    margin-top: 20px;
+    /* min-width: 600px;     */
 }
 
 
@@ -166,6 +167,7 @@ main section div#photo {
     /* filter: grayscale(); */
     background-size: 100%;
     background-attachment: initial;
+
 }
 
 
@@ -202,7 +204,13 @@ main section div:hover {
 
 #info {
     width: 80%;
+    /* min-width: 30vw; */
 }
+
+/* #info p {
+    min-width: 700px;
+} */
+
 
 #contact a:hover img {
     opacity: .6;
@@ -396,6 +404,7 @@ h2 {
     }
 }
 
+
 @media only screen and (max-width: 850px) { /* tablet and small monitors */
     main {
         padding-top: 20px;
@@ -445,6 +454,8 @@ h2 {
     #info {
         width: 100%;
     }
+
+
  
     #contact {
         width: 100%;
