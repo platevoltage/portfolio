@@ -3,7 +3,7 @@
 
 :root {
     --animation-time: .1s;
-    --panel-color: linear-gradient(#131385 0%,#13138585 100%);
+    --panel-color: linear-gradient(#131385 0%,#0e0e5a85 100%);
     --blur-amount: blur(4px);
     --text-color: #ffffff99;
     --radius: 20px;
@@ -113,6 +113,8 @@ main section.margin {
 main section.container {
     display: flex;
     justify-content: flex-end;
+    /* background-color: #131385; */
+    margin: 0%;
    
 }
 
@@ -161,7 +163,7 @@ main section {
 main section div#photo {
     aspect-ratio: 4/2.5;
     background-image: url("../images/photo2.jpg");
-    filter: grayscale();
+    /* filter: grayscale(); */
     background-size: 100%;
     background-attachment: initial;
 }
@@ -196,6 +198,10 @@ main section div:hover {
     z-index: 1;
     transition: all var(--animation-time); 
     box-shadow: 2px 2px 10px black;
+}
+
+#info {
+    width: 80%;
 }
 
 #contact a:hover img {
@@ -395,6 +401,8 @@ h2 {
         padding-top: 20px;
     }
 
+
+
     main section div:hover {
         margin: 0%;
         margin-top: 2%;
@@ -433,6 +441,11 @@ h2 {
         transition: all var(--animation-time);
         font-size: 30px;
     }
+
+    #info {
+        width: 100%;
+    }
+ 
     #contact {
         width: 100%;
         justify-content: center;
@@ -475,9 +488,9 @@ h2 {
     }
 
     main section div:hover{
-        margin-top: 6%;
+        margin-top: 4%;
     }
     main section div{
-        margin-top: 6%;
+        margin-top: 4%;
     }
 }

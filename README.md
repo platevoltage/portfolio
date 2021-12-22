@@ -34,7 +34,7 @@ Some of the features of CSS used include:
 
 ## Deployed Link
 
-* [https://antieatingactivist.github.io/portfolio/](https://antieatingactivist.github.io/portfolio/])
+* [https://antieatingactivist.github.io/portfolio/](https://antieatingactivist.github.io/portfolio/)
 
 
 ## Authors
