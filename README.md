@@ -7,6 +7,7 @@ Some of the features of CSS used include:
 - Variables
 
     `--blur-amount: blur(4px);`
+    
     `backdrop-filter: var(--blur-amount);`
     
 - media queries for responsive design
@@ -16,12 +17,15 @@ Some of the features of CSS used include:
 - flexbox
 
     `display: flex;`
+    
     `flex-wrap: wrap;`
+    
     `flex: 1 0 auto;`
     
 - blur and opacity effects
 
     `backdrop-filter: var(--blur-amount);`
+    
     `opacity: .6;`
 
 
