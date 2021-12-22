@@ -6,6 +6,7 @@
     --panel-color: linear-gradient(#131385 0%,#0e0e5a85 100%);
     --blur-amount: blur(4px);
     --text-color: #ffffff99;
+    --text-color-hover: #ffffffff;
     --radius: 20px;
 
 }
@@ -80,7 +81,7 @@ a {
 
 nav a:hover {
 
-    color: #ffffff;
+    color: var(--text-color-hover);
 }
 
 nav a:active {
@@ -113,7 +114,6 @@ main section.margin {
 main section.container {
     display: flex;
     justify-content: flex-end;
-    /* background-color: #131385; */
     margin: 0%;
    
 }
@@ -126,7 +126,6 @@ main section#left { /* left column of content */
     justify-content: flex-start;
     margin-right: 10px;
     margin-top: 20px;
-    /* min-width: 600px;     */
 }
 
 
@@ -141,8 +140,6 @@ main section#project-panel { /* blue sectiop */
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    
-    /* width: 38%; */
     max-width: 600px;
     background-image: var(--panel-color);
     background-attachment: fixed;
@@ -150,8 +147,7 @@ main section#project-panel { /* blue sectiop */
     padding: 10px;
     border-style: solid;
     border-width: 0px 1px 1px 0px;
-    border-color: #363685be
-    /* height: 10%; */
+    border-color: #363685be;
 }
 
 main section {
@@ -164,7 +160,6 @@ main section {
 main section div#photo {
     aspect-ratio: 4/2.5;
     background-image: url("../images/photo2.jpg");
-    /* filter: grayscale(); */
     background-size: 100%;
     background-attachment: initial;
 
@@ -204,12 +199,7 @@ main section div:hover {
 
 #info {
     width: 80%;
-    /* min-width: 30vw; */
 }
-
-/* #info p {
-    min-width: 700px;
-} */
 
 
 #contact a:hover img {
@@ -217,7 +207,7 @@ main section div:hover {
 }
 
 #contact a:hover span {
-    color: #ffffff;
+    color: var(--text-color-hover);
 }
 
 #contact div {
@@ -339,7 +329,7 @@ h2 {
 }
 
 .project:hover h2{
-    color: #ffffffff;
+    color: var(--text-color-hover);
 }
 
 
@@ -363,7 +353,7 @@ h2 {
     transition: all var(--animation-time);
     width: 66%;
     left: 16%;
-    color: #ffffffff;
+    color: var(--text-color-hover);
     
 }
 
