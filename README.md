@@ -45,4 +45,4 @@ Garrett Corbin
 - [https://github.com/antieatingactivist/](https://github.com/)
 - [https://www.linkedin.com/in/garrett-corbin-7a7777227/](https://www.linkedin.com/)
 
-<img width="1449" alt="Screen Shot 2021-12-20 at 11 05 03 PM" src="https://user-images.githubusercontent.com/1414728/146886486-70f3f367-79a4-4547-b9fe-6cfc794bfb54.png">
+<img width="1479" alt="Screen Shot 2021-12-21 at 8 34 52 PM" src="https://user-images.githubusercontent.com/1414728/147036152-196b566b-15a9-4c38-85fd-06f0b0b77386.png">
