@@ -11,11 +11,11 @@ Some of the features of CSS used include:
     
     `backdrop-filter: var(--blur-amount);`
     
-- media queries for responsive design
+- Media queries for responsive design
 
     `@media only screen and (max-width: 850px) {`
    
-- flexbox
+- Flexbox
 
     `display: flex;`
     
@@ -23,7 +23,7 @@ Some of the features of CSS used include:
     
     `flex: 1 0 auto;`
     
-- blur and opacity effects
+- Blur and opacity effects
 
     `backdrop-filter: var(--blur-amount);`
     
